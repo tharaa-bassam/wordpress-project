@@ -1,0 +1,17 @@
+2023-10-27T13:50:23+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in C:\xampp\htdocs\project2\wordpress\wp-content\plugins\woolentor-addons\woolentor-blocks\includes\classes\Api\Api.php:284
+Stack trace:
+#0 C:\xampp\htdocs\project2\wordpress\wp-includes\rest-api\class-wp-rest-server.php(1194): WooLentorBlocks\Api\Api->get_last_product_data(Object(WP_REST_Request))
+#1 C:\xampp\htdocs\project2\wordpress\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/woolentor/v1/s...', Array, NULL)
+#2 C:\xampp\htdocs\project2\wordpress\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#3 C:\xampp\htdocs\project2\wordpress\wp-includes\rest-api.php(418): WP_REST_Server->serve_request('/woolentor/v1/s...')
+#4 C:\xampp\htdocs\project2\wordpress\wp-includes\class-wp-hook.php(310): rest_api_loaded(Object(WP))
+#5 C:\xampp\htdocs\project2\wordpress\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\project2\wordpress\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\project2\wordpress\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#8 C:\xampp\htdocs\project2\wordpress\wp-includes\class-wp.php(779): WP->parse_request('')
+#9 C:\xampp\htdocs\project2\wordpress\wp-includes\functions.php(1335): WP->main('')
+#10 C:\xampp\htdocs\project2\wordpress\wp-blog-header.php(16): wp()
+#11 C:\xampp\htdocs\project2\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#12 {main}
+  thrown in C:\xampp\htdocs\project2\wordpress\wp-content\plugins\woolentor-addons\woolentor-blocks\includes\classes\Api\Api.php on line 284
+
